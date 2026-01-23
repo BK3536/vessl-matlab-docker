@@ -41,7 +41,7 @@ RUN wget -q https://www.mathworks.com/mpm/glnxa64/mpm && \
 
 # 4-2. MPM 재다운로드 및 [2차 설치]: AI & Parallel Computing (무거운 툴박스)
 # 1차 설치된 경로에 덧붙여서 설치합니다.
-RUN wget -q https://www.mathworks.com/mpm/lnx/mpm && \
+RUN wget -q https://www.mathworks.com/mpm/glnxa64/mpm && \
     chmod +x mpm && \
     ./mpm install \
     --release R2023b \
