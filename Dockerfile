@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y meep h5utils python3-meep && \
 
 # 4-1. MPM 다운로드 및 [1차 설치]: Core & Radar/Comms (기반 툴박스)
 # 에뮬레이션 부하를 줄이기 위해 먼저 설치합니다.
-RUN wget -q https://www.mathworks.com/mpm/lnx/mpm && \
+RUN wget -q https://www.mathworks.com/mpm/glnxa64/mpm && \
     chmod +x mpm && \
     ./mpm install \
     --release R2023b \
